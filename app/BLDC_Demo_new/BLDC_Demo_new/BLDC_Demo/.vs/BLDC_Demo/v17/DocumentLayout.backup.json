@@ -1,0 +1,487 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\controls\\commrs485.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:controls\\commrs485.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\commmotorselectcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:commmotorselectcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\controls\\commethernet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:controls\\commethernet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\controls\\bl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:controls\\bl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|c:\\users\\lenovo\\downloads\\bldc_demo_new\\bldc_demo_new\\bldc_demo\\models\\modbusdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:models\\modbusdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\controls\\icomm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:controls\\icomm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\commmotorselectcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:commmotorselectcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\leftmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:leftmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\motortemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:motortemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\motorcontrolpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:motorcontrolpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\leftmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:leftmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\rightmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:rightmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\rightmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:rightmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\services\\bldcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:services\\bldcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\motortemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:motortemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CommMotorSelectControl.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\7079fa7836c060fa23b39470f0a21e0dc46e3022a7645b6f2895635a6457dcdb\\TcpClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\appshellcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:appshellcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\b577b8b6f02562c86ddc1527d1f90626df4c83955cb372ffd25e97e29d2aee30\\SerialStream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\networkconfigcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:networkconfigcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\appshellcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:appshellcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\c6a5a7f5f1f891b96e7ce20decdfb3b83d9ea38a008c3e03a9a2dc211cf459f6\\WpfXamlLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\motorcontrolpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:motorcontrolpanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\networkconfigcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:networkconfigcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MotorControlPanel.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml",
+              "RelativeDocumentMoniker": "MotorControlPanel.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml",
+              "RelativeToolTip": "MotorControlPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-26T05:07:20.13Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommRS485.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\CommRS485.cs",
+              "RelativeDocumentMoniker": "Controls\\CommRS485.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\CommRS485.cs",
+              "RelativeToolTip": "Controls\\CommRS485.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAuwNEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:49:37.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommMotorSelectControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml.cs",
+              "RelativeDocumentMoniker": "CommMotorSelectControl.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml.cs",
+              "RelativeToolTip": "CommMotorSelectControl.xaml.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAgwPIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T05:05:06.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BL.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\BL.cs",
+              "RelativeDocumentMoniker": "Controls\\BL.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\BL.cs",
+              "RelativeToolTip": "Controls\\BL.cs",
+              "ViewState": "AgIAAOIEAAAAAAAAAAAIwOsEAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:40:27.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommEthernet.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\CommEthernet.cs",
+              "RelativeDocumentMoniker": "Controls\\CommEthernet.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\CommEthernet.cs",
+              "RelativeToolTip": "Controls\\CommEthernet.cs",
+              "ViewState": "AgIAAHoDAAAAAAAAAAAAAL8DAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:53:00.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModbusDevice.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Models\\ModbusDevice.cs",
+              "RelativeDocumentMoniker": "Models\\ModbusDevice.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Models\\ModbusDevice.cs",
+              "RelativeToolTip": "Models\\ModbusDevice.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwMIAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T06:41:40.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommMotorSelectControl.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml",
+              "RelativeDocumentMoniker": "CommMotorSelectControl.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml",
+              "RelativeToolTip": "CommMotorSelectControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T04:39:31.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwGMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T05:28:45.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IComm.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\IComm.cs",
+              "RelativeDocumentMoniker": "Controls\\IComm.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Controls\\IComm.cs",
+              "RelativeToolTip": "Controls\\IComm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:40:33.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LeftMdrControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml.cs",
+              "RelativeDocumentMoniker": "LeftMdrControl.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml.cs",
+              "RelativeToolTip": "LeftMdrControl.xaml.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAADwvygBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:43:24.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MotorTemplates.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.cs",
+              "RelativeDocumentMoniker": "MotorTemplates.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.cs",
+              "RelativeToolTip": "MotorTemplates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T06:27:31.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeftMdrControl.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml",
+              "RelativeDocumentMoniker": "LeftMdrControl.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml",
+              "RelativeToolTip": "LeftMdrControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T13:24:34.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T12:48:18.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RightMdrControl.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml",
+              "RelativeDocumentMoniker": "RightMdrControl.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml",
+              "RelativeToolTip": "RightMdrControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T13:19:22.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MotorTemplates.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.xaml",
+              "RelativeDocumentMoniker": "MotorTemplates.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.xaml",
+              "RelativeToolTip": "MotorTemplates.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-20T05:35:41.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppShellControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml.cs",
+              "RelativeDocumentMoniker": "AppShellControl.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml.cs",
+              "RelativeToolTip": "AppShellControl.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T04:55:35.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NetworkConfigControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkConfigControl.xaml.cs",
+              "RelativeDocumentMoniker": "NetworkConfigControl.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkConfigControl.xaml.cs",
+              "RelativeToolTip": "NetworkConfigControl.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T08:53:13.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MotorControlPanel.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml.cs",
+              "RelativeDocumentMoniker": "MotorControlPanel.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml.cs",
+              "RelativeToolTip": "MotorControlPanel.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwC4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T08:18:43.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RightMdrControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml.cs",
+              "RelativeDocumentMoniker": "RightMdrControl.xaml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml.cs",
+              "RelativeToolTip": "RightMdrControl.xaml.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAAPEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T10:09:48.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BLDCService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Services\\BLDCService.cs",
+              "RelativeDocumentMoniker": "Services\\BLDCService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Services\\BLDCService.cs",
+              "RelativeToolTip": "Services\\BLDCService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T10:55:07.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T11:45:49.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommMotorSelectControl.xaml.cs",
+              "DocumentMoniker": "D:\\CommMotorSelectControl.xaml.cs",
+              "ToolTip": "D:\\CommMotorSelectControl.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:25:43.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NetworkConfigControl.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkConfigControl.xaml",
+              "RelativeDocumentMoniker": "NetworkConfigControl.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkConfigControl.xaml",
+              "RelativeToolTip": "NetworkConfigControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T13:26:40.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WpfXamlLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\c6a5a7f5f1f891b96e7ce20decdfb3b83d9ea38a008c3e03a9a2dc211cf459f6\\WpfXamlLoader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\c6a5a7f5f1f891b96e7ce20decdfb3b83d9ea38a008c3e03a9a2dc211cf459f6\\WpfXamlLoader.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\c6a5a7f5f1f891b96e7ce20decdfb3b83d9ea38a008c3e03a9a2dc211cf459f6\\WpfXamlLoader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\c6a5a7f5f1f891b96e7ce20decdfb3b83d9ea38a008c3e03a9a2dc211cf459f6\\WpfXamlLoader.cs [Read Only]",
+              "ViewState": "AgIAALsAAAAAAAAAAAAgwIMAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T08:28:27.939Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TcpClient.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\7079fa7836c060fa23b39470f0a21e0dc46e3022a7645b6f2895635a6457dcdb\\TcpClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\7079fa7836c060fa23b39470f0a21e0dc46e3022a7645b6f2895635a6457dcdb\\TcpClient.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\7079fa7836c060fa23b39470f0a21e0dc46e3022a7645b6f2895635a6457dcdb\\TcpClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\7079fa7836c060fa23b39470f0a21e0dc46e3022a7645b6f2895635a6457dcdb\\TcpClient.cs",
+              "ViewState": "AgIAACwCAAAAAAAAAADgvz4CAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T09:28:17.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FrameworkTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\573b2880de378bcf441369c3a2498b47757341930a70040b33011a78e0c10adf\\FrameworkTemplate.cs [Read Only]",
+              "ViewState": "AgIAAB4DAAAAAAAAAAAswBoDAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:48:46.5Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SerialStream.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\b577b8b6f02562c86ddc1527d1f90626df4c83955cb372ffd25e97e29d2aee30\\SerialStream.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\b577b8b6f02562c86ddc1527d1f90626df4c83955cb372ffd25e97e29d2aee30\\SerialStream.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\b577b8b6f02562c86ddc1527d1f90626df4c83955cb372ffd25e97e29d2aee30\\SerialStream.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Ivausr\\AppData\\Local\\Temp\\.vsdbgsrc\\b577b8b6f02562c86ddc1527d1f90626df4c83955cb372ffd25e97e29d2aee30\\SerialStream.cs [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUDAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T08:37:02.768Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppShellControl.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml",
+              "RelativeDocumentMoniker": "AppShellControl.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml",
+              "RelativeToolTip": "AppShellControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T12:19:38.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lenovo\\Downloads\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T04:41:13.902Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

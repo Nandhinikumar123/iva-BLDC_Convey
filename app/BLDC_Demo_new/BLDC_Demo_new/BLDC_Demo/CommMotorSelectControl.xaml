@@ -1,0 +1,243 @@
+﻿<UserControl x:Class="BLDC_Demo.CommMotorSelectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BLDC_Demo"
+             Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <DataTemplate x:Key="SubDeviceTemplate">
+            <Grid Margin="0,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    <Border Background="Transparent" Cursor="Hand" MouseLeftButtonDown="DeviceRow_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="└─ " Foreground="#CBD5E1" FontFamily="Consolas" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding MacAddress, StringFormat='ID: {0}'}" 
+                             Foreground="{StaticResource AccentBrush}"  FontFamily="Consolas" FontSize="11" FontWeight="Bold" />
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Margin="22,5,0,0" Visibility="{Binding IsActive, Converter={StaticResource BooleanToVisibilityConverter}}">
+
+                        <TextBlock Text="LEFT MOTOR" Foreground="#94A3B8" FontSize="9" FontWeight="Black" Margin="0,5,0,2"/>
+                        <Grid Margin="0,0,0,1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Text="Speed:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding LeftSpeed}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="1" Text="Current:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding LeftCurrent, StringFormat='{}{0} mA'}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="2" Text="Acceleration:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding LeftAcceleration}" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+
+                            <TextBlock Grid.Row="3" Text="Deceleration" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding LeftDeceleration}" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="4" Text="Hall Sensor :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding LeftHallSensorError}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="5" Text="Over Current :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding LeftOverCurrent}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="6" Text="Over Voltage :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding LeftOverVoltage}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="7" Text="Under Voltage :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding LeftUnderVoltage}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="8" Text="Motor Stalled :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding LeftMotorStalled}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="9" Text="Over Temp :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding LeftOverTemperature}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="10" Text="Break Method:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding LeftBrakeIndex}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="11" Text="Left Motor :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="11" Grid.Column="1" Text="{Binding LeftMotorHallTypeIndex}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+
+                        </Grid>
+
+                        <TextBlock Text="RIGHT MOTOR" Foreground="#94A3B8" FontSize="9" FontWeight="Black" Margin="0,5,0,2"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Text="Speed :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding RightSpeed}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="1" Text="Current :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding RightCurrent, StringFormat='{}{0} mA'}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+
+                            <TextBlock Grid.Row="2" Text="Acceleration:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding RightAcceleration}" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+
+                            <TextBlock Grid.Row="3" Text="Deceleration" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding RightDeceleration}" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="4" Text="Hall Sensor :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding RightHallSensorError}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="5" Text="Over Current :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding RightOverCurrent}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="6" Text="Over Voltage :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding RightOverVoltage}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="7" Text="Under Voltage :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding RightUnderVoltage}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="8" Text="Motor Stalled :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding RightMotorStalled}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="9" Text="Over Temp :" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding RightOverTemperature}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+                            <TextBlock Grid.Row="10" Text="Break Method:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding RightBrakeIndex}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="11" Text=" Right Motor:" Foreground="#64748B" FontSize="10" FontFamily="Consolas"/>
+
+                            <TextBlock Grid.Row="11" Grid.Column="1" Text="{Binding  RightMotorHallTypeIndex}" Foreground="#64748B" FontSize="10" FontWeight="Bold" FontFamily="Consolas"/>
+
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Border Background="White" BorderBrush="{StaticResource BorderBrush}"
+            BorderThickness="0" CornerRadius="10" Padding="20,20"
+            VerticalAlignment="Stretch">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,18">
+                <Rectangle Width="3" Height="16" Fill="{StaticResource AccentBrush}" VerticalAlignment="Center" Margin="0,0,10,0" RadiusX="2" RadiusY="2"/>
+                <TextBlock Text="COMM &amp; MDR CONTROLLER" FontFamily="Arial Black" FontSize="11" FontWeight="Black" Foreground="{StaticResource AccentBrush}" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Border Grid.Row="1" Background="White" BorderBrush="#D0D5E0" BorderThickness="1" CornerRadius="8" Padding="14,12" Margin="0,0,0,14">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                        <Ellipse Width="7" Height="7" Fill="{StaticResource AccentBrush}" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <TextBlock Text="MODBUS RTU" FontWeight="Bold" FontFamily="Consolas" FontSize="9" Foreground="{StaticResource AccentBrush}"/>
+                        <TextBlock Text=" — AUTO DETECT" FontFamily="Consolas" FontSize="9" Foreground="#9AA3B5"/>
+                    </StackPanel>
+
+                    <TextBlock x:Name="RtuScanStatus" Text="Scanning for connected devices…" FontFamily="Consolas" FontSize="8" Foreground="#9AA3B5" Margin="0,0,0,8"/>
+
+                    <Grid>
+                        <Border x:Name="RtuEmptyHint" Padding="12,16" Visibility="Visible" Background="#F8F9FC" BorderBrush="#E2E8F0" BorderThickness="1" CornerRadius="6">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock Text="○" FontSize="18" Foreground="#CBD5E1" HorizontalAlignment="Center" Margin="0,0,0,4"/>
+                                <TextBlock Text="No COM ports detected" FontFamily="Consolas" FontSize="8" Foreground="#9AA3B5" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+
+                        <ScrollViewer x:Name="RtuPortScroll" MaxHeight="250" VerticalScrollBarVisibility="Auto" Visibility="Collapsed">
+                            <StackPanel x:Name="RtuPortList"/>
+                        </ScrollViewer>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="2" Background="White" BorderBrush="#D0D5E0" BorderThickness="1" CornerRadius="8" Padding="14,12">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                        <Ellipse Width="7" Height="7" Fill="{StaticResource AccentBrush}" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <TextBlock Text="MODBUS TCP" FontWeight="Bold" FontFamily="Consolas" FontSize="9" Foreground="{StaticResource AccentBrush}"/>
+                        <TextBlock Text=" — MANUAL ENTRY" FontFamily="Consolas" FontSize="9" Foreground="#9AA3B5"/>
+                    </StackPanel>
+
+                    <TextBlock x:Name="TcpScanStatus" Text="Ready to connect..." x:FieldModifier="public" FontFamily="Consolas" FontSize="8" Foreground="#9AA3B5" Margin="0,0,0,12"/>
+
+                    <Grid Margin="0,0,0,8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="IP address :" FontFamily="Consolas" FontSize="10" Foreground="{StaticResource AccentBrush}" VerticalAlignment="Center"/>
+                        <TextBox x:Name="TcpIpAddress" Grid.Column="1" FontFamily="Consolas" FontSize="11" Foreground="{StaticResource AccentBrush}" Height="28" Text="192.168.150.20" Padding="6,4" BorderBrush="#C0C9D8" BorderThickness="1"/>
+                    </Grid>
+
+                    <Grid Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="TCP port :" FontFamily="Consolas" FontSize="10" Foreground="{StaticResource AccentBrush}" VerticalAlignment="Center"/>
+                        <TextBox x:Name="TcpPort" Grid.Column="1" FontFamily="Consolas" FontSize="11" Foreground="{StaticResource AccentBrush}" Height="28" Text="502" Padding="6,4" BorderBrush="#C0C9D8" BorderThickness="1"/>
+                    </Grid>
+
+                    <Button x:Name="TcpConnectButton"  Style="{StaticResource SetButton}" Click="TcpConnectButton_Click" Content="Connect" FontFamily="Consolas" FontSize="10" FontWeight="Bold" Height="30" Width="70" HorizontalAlignment="Left" Background="#F0F2F8" Foreground="{StaticResource AccentBrush}" BorderBrush="#A0AABB" BorderThickness="1" Cursor="Hand">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="3" Background="#F8F9FC" BorderBrush="#E2E8F0" BorderThickness="1" CornerRadius="6" Padding="12" Margin="0,10,0,-21">
+                <ScrollViewer MaxHeight="400" VerticalScrollBarVisibility="Auto">
+                    <ItemsControl x:Name="TcpDeviceList" ItemTemplate="{StaticResource SubDeviceTemplate}"/>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>
