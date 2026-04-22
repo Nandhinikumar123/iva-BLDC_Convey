@@ -1,0 +1,346 @@
+﻿<UserControl x:Class="BLDC_Demo.NetworkService"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:BLDC_Demo"
+             mc:Ignorable="d"
+             Height="649"
+             Background="#E4EAF6"
+             FontFamily="Segoe UI"
+             FontSize="12">
+
+    <UserControl.Resources>
+
+        <!-- ── Accent colour ────────────────────────────────────── -->
+        <SolidColorBrush x:Key="AccentBrush" Color="#0096B7"/>
+
+        <!-- ── Base button (used by all action buttons) ─────────── -->
+        <Style x:Key="BaseButton" TargetType="Button">
+            <Setter Property="Background"       Value="#E1E1E1"/>
+            <Setter Property="BorderBrush"      Value="#ADADAD"/>
+            <Setter Property="BorderThickness"  Value="1"/>
+            <Setter Property="Padding"          Value="6,2"/>
+            <Setter Property="Cursor"           Value="Hand"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              Margin="{TemplateBinding Padding}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="#BEE6FD"/>
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="#3C7FB1"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.7"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.4"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ── Octet TextBox ────────────────────────────────────── -->
+        <Style x:Key="OctetBox" TargetType="TextBox">
+            <Setter Property="Width"                    Value="34"/>
+            <Setter Property="Height"                   Value="20"/>
+            <Setter Property="MaxLength"                Value="3"/>
+            <Setter Property="TextAlignment"            Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background"               Value="White"/>
+            <Setter Property="BorderBrush"              Value="#ADADAD"/>
+            <Setter Property="BorderThickness"          Value="1"/>
+            <Setter Property="Padding"                  Value="0"/>
+        </Style>
+
+        <!-- ── Dot between octets ───────────────────────────────── -->
+        <Style x:Key="Dot" TargetType="TextBlock">
+            <Setter Property="Text"              Value="."/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin"            Value="1,0"/>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid Margin="6,4,6,6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- subnet bar   -->
+            <RowDefinition Height="*"/>
+            <!-- main area    -->
+            <RowDefinition Height="Auto"/>
+            <!-- footer       -->
+        </Grid.RowDefinitions>
+
+        <!-- ═══════ ROW 0 — Subnet bar ═══════ -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,4">
+            <TextBlock Text="Show devices on Subnet :" Style="{StaticResource FieldLabel}"
+                       VerticalAlignment="Center" Margin="0,0,6,0"/>
+            <ComboBox x:Name="CmbSubnet"  Style="{StaticResource DarkComboBox}" Foreground="#5A6A8A" Width="165" Height="22" SelectedIndex="0">
+                <ComboBoxItem Content="&lt;&lt;&lt; ALL networks &gt;&gt;&gt;"/>
+            </ComboBox>
+
+            <Button Content="Discover"
+                    Style="{StaticResource SetButton}"
+                    Width="82" Height="22" Margin="6,0,0,0"
+                    Click="BtnDiscover_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
+        <!-- ═══════ ROW 1 — Main area ═══════ -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="355"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- ── Left: Discovered modules list ── -->
+            <Border Grid.Column="0"
+                    BorderBrush="#808080" BorderThickness="1" Background="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="22"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Background="#E4EAF6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Discovered modules:" Style="{StaticResource FieldLabel}"
+                                   VerticalAlignment="Center" Padding="4,0"/>
+                        <Border Grid.Column="1"
+                                BorderBrush="#808080" BorderThickness="1,0,0,0"/>
+                    </Grid>
+
+                    <ListBox Grid.Row="1"
+                             x:Name="LstModules"
+                             BorderThickness="0" Background="White"
+                             SelectionMode="Extended"
+                             SelectionChanged="LstModules_SelectionChanged"/>
+                </Grid>
+            </Border>
+
+            <!-- ── Right: Settings + buttons ── -->
+            <Grid Grid.Column="1" Margin="6,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Settings group box -->
+                <Border Grid.Row="0"
+                        BorderBrush="#808080" BorderThickness="1"
+                        Padding="10,8,10,10" Background="#FFFFFF">
+                    <StackPanel>
+
+                        <TextBlock Text="Settings of the selected node" Style="{StaticResource FieldLabel}" 
+                                   Margin="0,0,0,8"/>
+
+                        <!-- Serial Number -->
+                        <DockPanel Margin="0,0,0,6">
+                            <TextBlock Text="Serial Number" Width="88" Style="{StaticResource FieldLabel}" 
+                                       VerticalAlignment="Center"  DockPanel.Dock="Left"/>
+                            <TextBox x:Name="TxtSerialNumber" Height="30" 
+                                     IsReadOnly="True" Background="White" Style="{StaticResource DarkTextBox}" 
+                                     BorderBrush="#ADADAD" BorderThickness="1" />
+                        </DockPanel>
+
+                        <!-- IP -->
+                        <DockPanel Margin="0,0,0,6">
+                            <TextBlock Text="IP" Width="88" Style="{StaticResource FieldLabel}" 
+                                       VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="TxtIp1"   Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtIp2"  Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtIp3"   Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtIp4"   Style="{StaticResource DarkTextBox}" />
+                            </StackPanel>
+                        </DockPanel>
+
+                        <!-- Mask -->
+                        <DockPanel Margin="0,0,0,6">
+                            <TextBlock Text="Mask" Width="88" Style="{StaticResource FieldLabel}" 
+                                       VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="TxtMask1" Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtMask2" Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtMask3" Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtMask4" Style="{StaticResource DarkTextBox}" />
+                            </StackPanel>
+                        </DockPanel>
+
+                        <!-- Gateway -->
+                        <DockPanel Margin="0,0,0,8">
+                            <TextBlock Text="Gateway" Width="88" Style="{StaticResource FieldLabel}" 
+                                       VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                            <CheckBox x:Name="ChkGateway" IsChecked="True"
+                                      VerticalAlignment="Center" Margin="0,0,4,0"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="TxtGw1"  Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtGw2"   Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtGw3" Style="{StaticResource DarkTextBox}" />
+                                <TextBlock Style="{StaticResource Dot}"/>
+                                <TextBox x:Name="TxtGw4" Style="{StaticResource DarkTextBox}" />
+                            </StackPanel>
+                        </DockPanel>
+
+                        <!-- Set button — uses provided SetButton style -->
+                    
+                        <Button Content="Set"
+                                Style="{StaticResource SetButton}"
+                                HorizontalAlignment="Right"
+                                Margin="0,0,0,8"
+                                Click="BtnSet_Click">
+                            <Button.Effect>
+                                <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                            </Button.Effect>
+                        </Button>
+                        <!-- position -->
+                        <DockPanel>
+                            <TextBlock Text="position" Width="88" Style="{StaticResource FieldLabel}" 
+                                       VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                            <TextBox x:Name="TxtPosition" Style="{StaticResource DarkTextBox}"  Height="30" Text="—"
+                                     IsReadOnly="True" Background="White" 
+                                     BorderBrush="#ADADAD" BorderThickness="1" />
+                        </DockPanel>
+
+                    </StackPanel>
+                </Border>
+ 
+                    <!-- Action button grid -->
+                <Grid Grid.Row="1" Margin="0,8,0,0"   Background="#E4EAF6"
+                      >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Select ALL  / Backup        -->
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Select NONE / Restore       -->
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="Auto"/>
+                        <!--              / Restore by IP-->
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Reorder IPs / Upgrade FW   -->
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0"
+                            Content="Select ALL" Height="26" Width="78"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch" Margin="0,0,4,0"
+                            Click="BtnSelectAll_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Grid.Row="0" Grid.Column="1"
+                            Content="Backup" Height="26" Width="78"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch"
+                            Click="BtnBackup_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Grid.Row="2" Grid.Column="0"
+                            Content="Select NONE" Height="26" Width="78"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch" Margin="0,0,4,0"
+                            Click="BtnSelectNone_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Grid.Row="2" Grid.Column="1"
+                            Content="Restore" Height="26" Width="78"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch"
+                            Click="BtnRestore_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Grid.Row="4" Grid.Column="1" Width="78"
+                            Content="Restore by IP" Height="26"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch"
+                            Click="BtnRestoreByIp_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Grid.Row="6" Grid.Column="0" Width="78"
+                            Content="Reorder IPs" Height="26"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch" Margin="0,0,4,0"
+                            Click="BtnReorderIPs_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button Grid.Row="6" Grid.Column="1"
+                            Content="Upgrade FW" Height="26" Width="78"
+                            Style="{StaticResource SetButton}"
+                            HorizontalAlignment="Stretch"
+                            Click="BtnUpgradeFw_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+
+       
+                </Grid>
+
+            </Grid>
+           
+        </Grid>
+
+        <!-- ═══════ ROW 2 — Footer / status ═══════ -->
+        <Border Grid.Row="2"
+                BorderBrush="#808080" BorderThickness="1"
+                Background="White" Margin="0,6,0,0" Padding="4,2">
+            <StackPanel>
+                <TextBox x:Name="TxtStatus"
+                         BorderThickness="0" Background="Transparent"
+                         IsReadOnly="True" TextWrapping="Wrap"
+                         FontSize="11" Foreground="#444444"
+                        />
+                <TextBlock Text="* Use Ctrl/Shift for multiple selection"
+                           FontSize="10" Foreground="#555555" Margin="0,2,0,0"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,369 @@
+﻿<UserControl x:Class="BLDC_Demo.LookAheadTimingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             Background="#E4EAF6"
+             FontFamily="Consolas" Height="649">
+
+ 
+
+
+    <StackPanel Margin="14,12,14,12">
+
+        <!-- ── Look Ahead ── -->
+        <GroupBox Header="Look Ahead" Style="{StaticResource CardGroup}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <GroupBox Grid.Column="0" Header="Upstream" Style="{StaticResource InnerGroup}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                            <CheckBox x:Name="ChkUpSlowDown" VerticalAlignment="Center"
+                                          Content="Slow Down Speed"
+                                          FontFamily="Consolas" FontSize="11"
+                                          Foreground="{StaticResource MutedBrush}"
+                                          Width="125" Height="18"/>
+                            <TextBox x:Name="TxtUpSlowSpeed"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="%" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnUpSlowSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <CheckBox x:Name="ChkUpFastRelease" VerticalAlignment="Center"
+                                          Content="Fast Release Time"
+                                          FontFamily="Consolas" FontSize="11"
+                                          Foreground="{StaticResource MutedBrush}"
+                                          Width="125"/>
+                            <TextBox x:Name="TxtUpFastRelease"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Grid.Column="2" Header="Downstream" Style="{StaticResource InnerGroup}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                            <CheckBox x:Name="ChkDnSlowDown" VerticalAlignment="Center"
+                                          Content="Slow Down Speed"
+                                          FontFamily="Consolas" FontSize="11"
+                                          Foreground="{StaticResource MutedBrush}"
+                                          Width="125"/>
+                            <TextBox x:Name="TxtDnSlowSpeed"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="%" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnDnSlowSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <CheckBox x:Name="ChkDnFastRelease" VerticalAlignment="Center"
+                                          Content="Fast Release Time"
+                                          FontFamily="Consolas" FontSize="11"
+                                          Foreground="{StaticResource MutedBrush}"
+                                          Width="125"/>
+                            <TextBox x:Name="TxtDnFastRelease"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <Button Grid.Column="3"
+                            x:Name="BtnLookAheadSetAll"
+                            Content="Set All"
+                            Style="{StaticResource AdvancedButton}"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                    </Button.Effect>
+                </Button>
+            </Grid>
+        </GroupBox>
+
+        <!-- ── JAM & Auto Clear Timers ── -->
+        <GroupBox Header="JAM &amp; Auto Clear Timers" Style="{StaticResource CardGroup}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <GroupBox Grid.Column="0" Header="Upstream" Style="{StaticResource InnerGroup}">
+                    <Grid Margin="0,4,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="8"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                            <TextBlock Text="JAM Timer" VerticalAlignment="Center"
+                                           FontFamily="Consolas" FontSize="11"
+                                           Foreground="{StaticResource MutedBrush}" Width="125"/>
+                            <TextBox x:Name="TxtUpJamTimer"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnUpJamSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal">
+                            <TextBlock Text="Auto Clear Timer" VerticalAlignment="Center"
+                                           FontFamily="Consolas" FontSize="11"
+                                           Foreground="{StaticResource MutedBrush}" Width="125"/>
+                            <TextBox x:Name="TxtUpAutoClear"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnUpAutoSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Column="2" Header="Downstream" Style="{StaticResource InnerGroup}">
+                    <Grid Margin="0,4,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="8"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                            <TextBlock Text="JAM Timer" VerticalAlignment="Center"
+                                           FontFamily="Consolas" FontSize="11"
+                                           Foreground="{StaticResource MutedBrush}" Width="125"/>
+                            <TextBox x:Name="TxtDnJamTimer"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnDnJamSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect  BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal">
+                            <TextBlock Text="Auto Clear Timer" VerticalAlignment="Center"
+                                           FontFamily="Consolas" FontSize="11"
+                                           Foreground="{StaticResource MutedBrush}" Width="125"/>
+                            <TextBox x:Name="TxtDnAutoClear"
+                                         Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                            <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                            <Button x:Name="BtnDnAutoSet" Content="Set" Style="{StaticResource SetButton}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+
+                <Button Grid.Column="3"
+                            x:Name="BtnJamSetAll"
+                            Content="Set All"
+                            Style="{StaticResource AdvancedButton}"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                    </Button.Effect>
+                </Button>
+            </Grid>
+        </GroupBox>
+
+        <!-- ── Run After & Induct ── -->
+        <GroupBox Header="Run After &amp; Induct" Style="{StaticResource CardGroup}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <GroupBox Grid.Column="0" Header="Upstream" Style="{StaticResource SubGroup}">
+                    <StackPanel>
+                        <GroupBox Header="Run After" Style="{StaticResource InnerGroup}">
+                            <StackPanel>
+                                <ComboBox x:Name="CmbUpRunAfter"
+                                              Style="{StaticResource DarkComboBox}"
+                                              Height="28" Margin="0,4,0,4"/>
+                                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                    <TextBox x:Name="TxtUpRunAfterTime"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                    <Button x:Name="BtnUpRunAfterSet" Content="Set"
+                                                VerticalAlignment="Center" Margin="35,0,0,0"
+                                                Style="{StaticResource SetButton}">
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                        </Button.Effect>
+                                    </Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Induct Times" Style="{StaticResource InnerGroup}" Margin="0,6,0,0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="8"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,4,0,0">
+                                    <TextBlock Text="Induct Forward" VerticalAlignment="Center"
+                                                   FontFamily="Consolas" FontSize="11"
+                                                   Foreground="{StaticResource MutedBrush}" Width="125"/>
+                                    <TextBox x:Name="TxtUpInductFwd"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                    <Button x:Name="BtnUpInductFwdSet" Content="Set" Style="{StaticResource SetButton}">
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                        </Button.Effect>
+                                    </Button>
+                                </StackPanel>
+                                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                    <TextBlock Text="Induct Reverse" VerticalAlignment="Center"
+                                                   FontFamily="Consolas" FontSize="11"
+                                                   Foreground="{StaticResource MutedBrush}" Width="125"/>
+                                    <TextBox x:Name="TxtUpInductRev"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </GroupBox>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Grid.Column="2" Header="Downstream" Style="{StaticResource SubGroup}">
+                    <StackPanel>
+                        <GroupBox Header="Run After" Style="{StaticResource InnerGroup}">
+                            <StackPanel>
+                                <ComboBox x:Name="CmbDnRunAfter"
+                                              Style="{StaticResource DarkComboBox}"
+                                              Height="28" Margin="0,4,0,4"/>
+                                <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                    <TextBox x:Name="TxtDnRunAfterTime"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                    <Button x:Name="BtnDnRunAfterSet" Content="Set"
+                                                VerticalAlignment="Center" Margin="35,0,0,0"
+                                                Style="{StaticResource SetButton}">
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                        </Button.Effect>
+                                    </Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                        <GroupBox Header="Induct Times" Style="{StaticResource InnerGroup}" Margin="0,6,0,0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="8"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,4,0,0">
+                                    <TextBlock Text="Induct Forward" VerticalAlignment="Center"
+                                                   FontFamily="Consolas" FontSize="11"
+                                                   Foreground="{StaticResource MutedBrush}" Width="125"/>
+                                    <TextBox x:Name="TxtDnInductFwd"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                    <Button x:Name="BtnDnInductFwdSet" Content="Set" Style="{StaticResource SetButton}">
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                                        </Button.Effect>
+                                    </Button>
+                                </StackPanel>
+                                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                    <TextBlock Text="Induct Reverse" VerticalAlignment="Center"
+                                                   FontFamily="Consolas" FontSize="11"
+                                                   Foreground="{StaticResource MutedBrush}" Width="125"/>
+                                    <TextBox x:Name="TxtDnInductRev"
+                                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </GroupBox>
+                    </StackPanel>
+                </GroupBox>
+
+                <Button Grid.Column="3"
+                            x:Name="BtnInductSetAll"
+                            Content="Set All"
+                            Style="{StaticResource AdvancedButton}"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                    </Button.Effect>
+                </Button>
+            </Grid>
+        </GroupBox>
+
+        <!-- ── Sensor Debounce ── -->
+        <GroupBox Header="Sensor Debounce" Style="{StaticResource CardGroup}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBox x:Name="TxtDebounce"
+                                 Style="{StaticResource NumBox}" Margin="0,0,10,0"/>
+                    <TextBlock Text="sec" Style="{StaticResource UnitLabel}" Margin="0,0,10,0"/>
+                    <Button x:Name="BtnDebounceSet" Content="Set"
+                                VerticalAlignment="Center" Margin="48,0,0,0"
+                                Style="{StaticResource SetButton}">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+                <Button Grid.Column="1"
+                            x:Name="BtnDebounceSetAll"
+                            Content="Set All"
+                            Style="{StaticResource AdvancedButton}">
+                    <Button.Effect>
+                        <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                    </Button.Effect>
+                </Button>
+            </Grid>
+        </GroupBox>
+
+        <!-- ── Enable Reversing ── -->
+        <Border Background="{StaticResource PanelBrush}" 
+                    BorderBrush="{StaticResource BorderBrush}"
+                    BorderThickness="0"
+                    CornerRadius="6"
+                    Margin="0,0,0,12"
+                    Height="26">
+            <CheckBox x:Name="ChkEnableReversing"
+                          Style="{StaticResource StyledCheck}"
+                          Content="Enable Reversing Conveyor Control on Downstream Control Port"
+                          FontSize="11.5" Height="26"/>
+        </Border>
+
+    </StackPanel>
+
+</UserControl>

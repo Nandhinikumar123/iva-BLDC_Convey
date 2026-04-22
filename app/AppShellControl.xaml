@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="BLDC_Demo.AppShellControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BLDC_Demo">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="AccentBrush" Color="#00C8FF"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#C8D0E4"/>
+    </UserControl.Resources>
+
+    <!--
+        AppShellControl owns ONLY the right-side stack:
+          Row 0 : NetworkConfigControl
+          Row 2 : LeftMdrControl + RightMdrControl
+          Row 4 : MotorControlPanel
+    -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180"/>
+            <!-- Network Config  -->
+            <RowDefinition Height="17"/>
+            <!-- spacer          -->
+            <RowDefinition Height="334"/>
+            <!-- MDR pair        -->
+            <RowDefinition Height="17"/>
+            <!-- spacer          -->
+            <RowDefinition Height="Auto" />
+            <!-- Motor Control   -->
+        </Grid.RowDefinitions>
+
+        <!-- Network & Device Configuration -->
+        <local:NetworkConfigControl x:Name="NetworkConfigCtrl"
+                                    Grid.Row="0"/>
+
+
+        <!-- Left MDR + Right MDR side by side -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <local:LeftMdrControl  x:Name="LeftMdr"  Grid.Column="0"/>
+            <local:RightMdrControl x:Name="RightMdr" Grid.Column="2"/>
+        </Grid>
+
+        <!-- Motor Control Bar -->
+        <local:MotorControlPanel x:Name="MotorControl" Grid.Row="4"/>
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,448 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\commmotorselectcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:commmotorselectcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|c:\\users\\ivausr\\downloads\\working_1.0 (2)\\working_1.0\\bldc_demo_new (3)\\bldc_demo_new\\bldc_demo_new\\bldc_demo\\models\\modbusdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:models\\modbusdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\advancedsettingscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:advancedsettingscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:LeftMdrControl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\lookaheadtimingcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:lookaheadtimingcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\connections.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:connections.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:MotorControlPanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\motorcontrolpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:motorcontrolpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|c:\\users\\ivausr\\downloads\\working_1.0 (2)\\working_1.0\\bldc_demo_new (3)\\bldc_demo_new\\bldc_demo_new\\bldc_demo\\commmotorselectcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:commmotorselectcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\rightmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:rightmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\rightmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:rightmdrcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\leftmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:leftmdrcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\appshellcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:appshellcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\appshellcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:appshellcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\advancedsettingscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:advancedsettingscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\firmwareuploadcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:firmwareuploadcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\connections.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:connections.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\firmwareuploadcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:firmwareuploadcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\Downloads\\FirmwareUploadControl.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\auxusage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:auxusage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\auxusage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:auxusage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:MotorTemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ivausr\\Downloads\\Connections.xaml (1).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\networkservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E866E63-32EF-4A13-96A9-0369A262A12D}|BLDC_Demo.csproj|solutionrelative:networkservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModbusDevice.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Models\\ModbusDevice.cs",
+              "RelativeDocumentMoniker": "Models\\ModbusDevice.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Models\\ModbusDevice.cs",
+              "RelativeToolTip": "Models\\ModbusDevice.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwCsBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T12:21:11.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdvancedSettingsControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AdvancedSettingsControl.xaml.cs",
+              "RelativeDocumentMoniker": "AdvancedSettingsControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AdvancedSettingsControl.xaml.cs",
+              "RelativeToolTip": "AdvancedSettingsControl.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:52:55.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwE8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T05:28:45.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-13T05:29:55.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommMotorSelectControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml",
+              "RelativeDocumentMoniker": "CommMotorSelectControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml",
+              "RelativeToolTip": "CommMotorSelectControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T09:14:39.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LeftMdrControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml",
+              "RelativeDocumentMoniker": "LeftMdrControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml",
+              "RelativeToolTip": "LeftMdrControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T13:24:34.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LookAheadTimingControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LookAheadTimingControl.xaml",
+              "RelativeDocumentMoniker": "LookAheadTimingControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LookAheadTimingControl.xaml",
+              "RelativeToolTip": "LookAheadTimingControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T06:59:04.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Connections.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Connections.xaml.cs",
+              "RelativeDocumentMoniker": "Connections.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Connections.xaml.cs",
+              "RelativeToolTip": "Connections.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T10:26:32.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MotorControlPanel.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml.cs",
+              "RelativeDocumentMoniker": "MotorControlPanel.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml.cs",
+              "RelativeToolTip": "MotorControlPanel.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwCgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T08:18:43.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LeftMdrControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml.cs",
+              "RelativeDocumentMoniker": "LeftMdrControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\LeftMdrControl.xaml.cs",
+              "RelativeToolTip": "LeftMdrControl.xaml.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAUwKEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:00:52.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NetworkService.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkService.xaml",
+              "RelativeDocumentMoniker": "NetworkService.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\NetworkService.xaml",
+              "RelativeToolTip": "NetworkService.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-13T06:35:47.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Connections.xaml (1).cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\Connections.xaml (1).cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Connections.xaml (1).cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\Connections.xaml (1).cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Connections.xaml (1).cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAowNMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:28:01.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Connections.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Connections.xaml",
+              "RelativeDocumentMoniker": "Connections.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\Connections.xaml",
+              "RelativeToolTip": "Connections.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-10T05:21:02.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T12:48:18.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RightMdrControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml.cs",
+              "RelativeDocumentMoniker": "RightMdrControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml.cs",
+              "RelativeToolTip": "RightMdrControl.xaml.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAowAABAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:02:45.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RightMdrControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml",
+              "RelativeDocumentMoniker": "RightMdrControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\RightMdrControl.xaml",
+              "RelativeToolTip": "RightMdrControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T08:51:18.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuxUsage.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AuxUsage.xaml",
+              "RelativeDocumentMoniker": "AuxUsage.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AuxUsage.xaml",
+              "RelativeToolTip": "AuxUsage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-15T09:14:41.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FirmwareUploadControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\FirmwareUploadControl.xaml.cs",
+              "RelativeDocumentMoniker": "FirmwareUploadControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\FirmwareUploadControl.xaml.cs",
+              "RelativeToolTip": "FirmwareUploadControl.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T08:14:31.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FirmwareUploadControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\FirmwareUploadControl.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\FirmwareUploadControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\FirmwareUploadControl.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\FirmwareUploadControl.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwFUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T08:14:12.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FirmwareUploadControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\FirmwareUploadControl.xaml",
+              "RelativeDocumentMoniker": "FirmwareUploadControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\FirmwareUploadControl.xaml",
+              "RelativeToolTip": "FirmwareUploadControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T08:10:16.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MotorControlPanel.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml",
+              "RelativeDocumentMoniker": "MotorControlPanel.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorControlPanel.xaml",
+              "RelativeToolTip": "MotorControlPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T09:09:57.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommMotorSelectControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml.cs",
+              "RelativeDocumentMoniker": "CommMotorSelectControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\CommMotorSelectControl.xaml.cs",
+              "RelativeToolTip": "CommMotorSelectControl.xaml.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAqwA4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T10:53:22.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppShellControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml",
+              "RelativeDocumentMoniker": "AppShellControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml",
+              "RelativeToolTip": "AppShellControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-22T09:10:34.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppShellControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml.cs",
+              "RelativeDocumentMoniker": "AppShellControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AppShellControl.xaml.cs",
+              "RelativeToolTip": "AppShellControl.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T10:00:37.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuxUsage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AuxUsage.xaml.cs",
+              "RelativeDocumentMoniker": "AuxUsage.xaml.cs",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AuxUsage.xaml.cs",
+              "RelativeToolTip": "AuxUsage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T10:51:56.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdvancedSettingsControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AdvancedSettingsControl.xaml",
+              "RelativeDocumentMoniker": "AdvancedSettingsControl.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\AdvancedSettingsControl.xaml",
+              "RelativeToolTip": "AdvancedSettingsControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-13T06:52:53.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MotorTemplates.xaml",
+              "DocumentMoniker": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.xaml",
+              "RelativeDocumentMoniker": "MotorTemplates.xaml",
+              "ToolTip": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\MotorTemplates.xaml",
+              "RelativeToolTip": "MotorTemplates.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-20T05:35:41.987Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+﻿<UserControl x:Class="BLDC_Demo.Connections"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:BLDC_Demo"
+             mc:Ignorable="d"
+             Height="649"
+             Background="#E4EAF6"
+             FontFamily="Segoe UI"
+             FontSize="12">
+
+
+    <Border  Background="White" CornerRadius="4" Margin="10,10,10,10" BorderBrush="#D0D5E0" BorderThickness="1">
+
+        <Grid Background="White" Margin="10,10,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <!-- top fields  -->
+                <RowDefinition Height="170"/>
+                <!-- middle row  -->
+                <RowDefinition/>
+                <!-- PLC + Apply -->
+            </Grid.RowDefinitions>
+
+            <!-- ══════════════════════════════════════════════════
+             ROW 0 — Node # / IP Address / Subnet Mask
+        ══════════════════════════════════════════════════ -->
+            <Grid Grid.Row="0"  HorizontalAlignment="Center" Margin="0,36,0,18" Width="237">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="6"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="6"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="Auto" MinWidth="141.8"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Node # -->
+                <TextBlock Grid.Column="0"
+                       Text="Node #:" FontWeight="Black"  Style="{StaticResource FieldLabel}" Foreground="#5A6A8A" FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="26,0,0,0" Height="18" Width="58"/>
+                <ComboBox Grid.Row="0" Grid.Column="1"
+                      x:Name="CmbNode" Margin="11,0,11,6" Grid.RowSpan="2"/>
+
+                <!-- IP Address -->
+                <TextBlock Grid.Row="2" Grid.Column="0"
+                       Text="IP Address:"  FontWeight="Black" Style="{StaticResource FieldLabel}" Foreground="#5A6A8A"  FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="-7,0,0,0" Height="18" Width="91"/>
+                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,6" Grid.RowSpan="2">
+                    <TextBox x:Name="TxtDevIp1" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtDevIp2" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtDevIp3" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtDevIp4" Style="{StaticResource OctetBox}"/>
+                </StackPanel>
+
+                <!-- Subnet Mask -->
+                <TextBlock Grid.Row="4" Grid.Column="0"
+                       Text="Subnet Mask:"  FontWeight="Black" Style="{StaticResource FieldLabel}" Foreground="#5A6A8A" FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="-15,0,0,0" Height="18" Width="99"/>
+                <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                    <TextBox x:Name="TxtMask1" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtMask2" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtMask3" Style="{StaticResource OctetBox}"/>
+                    <TextBlock Style="{StaticResource Dot}"/>
+                    <TextBox x:Name="TxtMask4" Style="{StaticResource OctetBox}"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- ══════════════════════════════════════════════════
+             ROW 1 — Upstream | Device graphic | Downstream
+        ══════════════════════════════════════════════════ -->
+            <Grid Grid.Row="1" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- ── Upstream ── -->
+                <StackPanel Grid.Column="0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Margin="20,0,50,0">
+                    <TextBlock Text="Upstream"   Style="{StaticResource FieldLabel}" Foreground="#5A6A8A" FontWeight="Black"  FontSize="15"
+                           
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,6" Width="68"/>
+                    <RadioButton x:Name="RbUpNode"
+                             Content="Node #"   Foreground="#5A6A8A" FontWeight="Medium"  FontSize="12"
+                             GroupName="UpstreamMode"
+                             IsChecked="True"
+                             Margin="0,0,0,4" Height="25"
+                             
+                             />
+                    <ComboBox x:Name="CmbUpNode"
+                          Width="120" Height="25"
+                          Margin="0,0,0,8"/>
+                    <RadioButton x:Name="RbUpIp"
+                             Content="IP Address"   Foreground="#5A6A8A" FontWeight="Medium"  FontSize="12"
+                             GroupName="UpstreamMode"
+                             Margin="0,0,0,4" Height="25"
+                             />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="TxtUpIp1" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtUpIp2" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtUpIp3" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtUpIp4" Style="{StaticResource OctetBox}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- ── Device graphic ── -->
+                <Grid Grid.Column="1" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+
+                <!-- ── Downstream ── -->
+                <StackPanel Grid.Column="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Margin="50,0,20,0">
+                    <TextBlock Text="Downstream"  Style="{StaticResource FieldLabel}" Foreground="#5A6A8A" FontWeight="Black"  FontSize="15"
+                        
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,6"/>
+                    <RadioButton x:Name="RbDownNode"
+                             Content="Node #" Foreground="#5A6A8A" FontWeight="Medium"  FontSize="12"
+                             GroupName="DownstreamMode"
+                             IsChecked="True"
+                             Margin="0,0,0,4" Height="25"
+                           
+                             />
+                    <ComboBox x:Name="CmbDownNode"
+                          Width="120" Height="25"
+                          Margin="0,0,0,8"/>
+                    <RadioButton x:Name="RbDownIp"
+                             Content="IP Address" Height="25" Foreground="#5A6A8A" FontWeight="Medium"  FontSize="12"
+                             GroupName="DownstreamMode"
+                             Margin="0,0,0,4"
+                          />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="TxtDownIp1" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtDownIp2" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtDownIp3" Style="{StaticResource OctetBox}"/>
+                        <TextBlock Style="{StaticResource Dot}"/>
+                        <TextBox x:Name="TxtDownIp4" Style="{StaticResource OctetBox}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <!-- ══════════════════════════════════════════════════
+             ROW 2 — PLC I/O group box  +  Apply button
+        ══════════════════════════════════════════════════ -->
+            <Grid Grid.Row="2" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- ── PLC I/O Mode group box ── -->
+                <GroupBox Grid.Column="1"
+                      Header="PLC I/O Mode"   Foreground="#5A6A8A" FontWeight="Black"
+                 HorizontalAlignment="Center"   VerticalAlignment="Center" 
+                      Padding="8,6,8,8"
+                      BorderBrush="#888888"  Height="268">
+                    <StackPanel>
+
+                        <!-- PLC I/O Mode checkbox -->
+                        <CheckBox x:Name="ChkPlcIoMode"
+                              Content="PLC I/O Mode" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                              Margin="0,0,0,12"
+                              />
+                        <!-- Lock PLC Mode -->
+                        <CheckBox x:Name="ChkLockPlc"
+                              Content="Lock PLC Mode" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                              Margin="0,0,0,8"/>
+
+                        <!-- ON PLC Disconnected -->
+                        <TextBlock Text="ON PLC Disconnected" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                               Margin="0,0,0,2"/>
+                        <TextBlock Text="Outputs/Motors:" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                               Margin="0,0,0,4"/>
+                        <ComboBox x:Name="CmbPlcDisconnected"
+                              Width="160" Height="22"
+                              HorizontalAlignment="Left"
+                              Margin="0,0,0,10"/>
+
+                        <!-- PLC Program -->
+                        <TextBlock Text="PLC Program:" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                               Margin="0,0,0,4"/>
+                        <DockPanel Margin="0,0,0,10">
+                            <Button DockPanel.Dock="Right"
+                                Content="..."
+                                Style="{StaticResource BrowseButton}"
+                                
+
+                                Margin="4,0,0,0"/>
+                            <TextBox x:Name="TxtPlcProgram"
+                                 Height="20"
+                                 Background="White"
+                                 BorderBrush="#ADADAD"
+                                 BorderThickness="1"/>
+                        </DockPanel>
+
+                        <!-- Delete PLC Program -->
+                        <CheckBox x:Name="ChkDeletePlc"
+                              Content="Delete PLC Program" FontWeight="Medium" Foreground="#5A6A8A" FontSize="12"
+                              Margin="0,0,0,6"/>
+
+                        <!-- Clear Connections -->
+                        <CheckBox x:Name="ChkClearConnections"
+                              Content="Clear Connections" FontWeight="Medium" FontSize="12" Foreground="#5A6A8A"
+                              Margin="0,0,0,6"/>
+
+                        <!-- Hardware Controlled -->
+                        <CheckBox x:Name="ChkHardwareControlled" FontWeight="Medium" FontSize="12" Foreground="#5A6A8A"
+                              Content="Hardware Controlled"/>
+
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- ── Apply button — bottom right ── -->
+
+                <Button  Grid.Column="2"
+                    Content="Apply" Width="80" Height="28"
+ VerticalAlignment="Bottom"
+ HorizontalAlignment="Right"
+ Margin="0,0,0,4" Style="{StaticResource SetButton}" >
+                    <Button.Effect>
+                        <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.35"/>
+                    </Button.Effect>
+                </Button>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

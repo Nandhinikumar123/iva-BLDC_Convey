@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zbSjV3JFAeo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ivausr\\Downloads\\working_1.0 (2)\\working_1.0\\BLDC_Demo_new (3)\\BLDC_Demo_new\\BLDC_Demo_new\\BLDC_Demo\\BLDC_Demo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivausr\\.nuget\\packages\\nmodbus4\\2.1.0\\nmodbus4.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

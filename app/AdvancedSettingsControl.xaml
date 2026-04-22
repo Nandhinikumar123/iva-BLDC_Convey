@@ -1,0 +1,208 @@
+﻿<UserControl x:Class="BLDC_Demo.AdvancedSettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:BLDC_Demo"
+             mc:Ignorable="d"
+             d:DesignHeight="780" d:DesignWidth="780"
+             Background="#E4EAF6"
+             FontFamily="Consolas">
+
+    <Border Background="{StaticResource SurfaceBrush}"
+            BorderBrush="{StaticResource BorderBrush}"
+            BorderThickness="1" CornerRadius="8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- ══ HEADER BAR ══ -->
+            <Border Grid.Row="0"
+                    Background="#E4EAF6"
+                    CornerRadius="8,8,0,0"
+                    Padding="14,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="⚙" Foreground="#7A8AAA" FontSize="16"
+                                   VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <TextBlock Text="ConveyLinx  Advanced Settings"
+                                   Foreground="#7A8AAA"
+                                   FontFamily="Arial Black"
+                                   FontWeight="Bold"
+                                   FontSize="13"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <Border Grid.Column="2"
+                            Background="#E4EAF6"
+                            CornerRadius="4"
+                            Padding="10,3"
+                            Margin="0,0,8,0">
+                        <TextBlock x:Name="TxtIpAddress"
+                                   Text="192.168.150.21"
+                                   Foreground="#7A8AAA"
+                                   FontFamily="Consolas"
+                                   FontSize="12"
+                                   VerticalAlignment="Center"/>
+                    </Border>
+
+                    <TextBox Grid.Column="3"
+                             x:Name="TxtNode1"
+                             Text="2"
+                             Style="{StaticResource NumBox}"
+                             Width="42" Margin="0,0,4,0"
+                             Background="#E4EAF6"
+                             Foreground="#7A8AAA"/>
+
+                    <TextBlock Grid.Column="4" Text="–"
+                               Foreground="#7A8AAA" FontWeight="Bold"
+                               VerticalAlignment="Center" Margin="0,0,4,0"/>
+
+                    <TextBox Grid.Column="5"
+                             x:Name="TxtNode2"
+                             Text="2"
+                             Style="{StaticResource NumBox}"
+                             Width="42" Margin="0,0,12,0"
+                             Background="#E4EAF6"
+                             Foreground="#7A8AAA"/>
+
+                    <Button Grid.Column="6"
+                            x:Name="BtnRefresh"
+                            Content="⟳  Refresh"
+                            Style="{StaticResource AccentButton}"
+                            Width="Auto"
+                            Padding="16,0"
+                            Height="30"/>
+                </Grid>
+            </Border>
+
+            <!-- ══ TAB CONTROL ══ -->
+            <TabControl Grid.Row="1"
+                        x:Name="MainTabControl"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Padding="0"
+                        SelectionChanged="MainTabControl_SelectionChanged">
+                <TabControl.Template>
+                    <ControlTemplate TargetType="TabControl">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0"
+                                    Background="{StaticResource PanelBrush}"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="0,0,0,1">
+                                <TabPanel x:Name="HeaderPanel"
+                                          IsItemsHost="True"
+                                          Background="Transparent"/>
+                            </Border>
+                            <ContentPresenter Grid.Row="1"   
+                                              x:Name="PART_SelectedContentHost"
+                                              ContentSource="SelectedContent"/>
+                        </Grid>
+                    </ControlTemplate>
+                </TabControl.Template>
+
+                <TabItem Header="Look Ahead &amp; Timing"
+                         Style="{StaticResource NavTab}"
+                         IsSelected="True">
+                    <ContentControl x:Name="LookAheadContent"/>
+                </TabItem>
+
+                <TabItem Header="AUX Usage" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="AuxUsageContent"/>
+                </TabItem>
+
+                <TabItem Header="Flex Zone" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="FlexZoneContent"/>
+                </TabItem>
+
+                <TabItem Header="Sensors" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="SensorsContent"/>
+                </TabItem>
+
+                <TabItem Header="Extensions" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="ExtensionsContent"/>
+                </TabItem>
+
+                <TabItem Header="Upgrade" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="UpgradeContent"/>
+                </TabItem>
+
+                <TabItem Header="Connections" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="ConnectionsContent"/>
+                </TabItem>
+
+                <TabItem Header="Network Services" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="NetworkServicesContent"/>
+                </TabItem>
+
+                <TabItem Header="Special Services" Style="{StaticResource NavTab}">
+                    <ContentControl x:Name="SpecialServicesContent"/>
+                </TabItem>
+
+            </TabControl>
+
+            <!-- ══ STATUS BAR ══ -->
+            <Border Grid.Row="2"
+                    Background="{StaticResource PanelBrush}"
+                    BorderBrush="{StaticResource BorderBrush}"
+                    BorderThickness="0,1,0,0"
+                    CornerRadius="0,0,8,8"
+                    Padding="14,6">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Style="{StaticResource StatusIndicatorStyle}" Tag="False"/>
+                        <TextBlock Text="Motor Sensor Error:"
+                                   Style="{StaticResource FieldLabel}"
+                                   Margin="0,0,6,0"
+                                   VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TxtMotorError"
+                                   Text="—"
+                                   Foreground="{StaticResource MutedBrush}"
+                                   FontFamily="Consolas"
+                                   FontSize="11"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Style="{StaticResource StatusIndicatorStyle}" Tag="True"/>
+                        <TextBlock Text="Current:"
+                                   Style="{StaticResource FieldLabel}"
+                                   Margin="0,0,6,0"
+                                   VerticalAlignment="Center"/>
+                        <TextBlock x:Name="TxtCurrent"
+                                   Text="— mA"
+                                   Foreground="{StaticResource TextBrush}"
+                                   FontFamily="Consolas"
+                                   FontSize="11"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</UserControl>

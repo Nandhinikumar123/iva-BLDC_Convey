@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="BLDC_Demo.MotorControlPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="158">
+
+    <Border Background="White" BorderBrush="#D0D5E0"
+            BorderThickness="1.5" CornerRadius="10" Padding="20,14" Height="153">
+        <Border.Effect>
+            <DropShadowEffect Color="#00C8FF" BlurRadius="12" ShadowDepth="0" Opacity="0.15"/>
+        </Border.Effect>
+        <StackPanel Margin="0,18,0,0">
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                <Rectangle Width="3" Height="14" Fill="{StaticResource AccentBrush}"
+                           VerticalAlignment="Center" Margin="0,0,10,0" RadiusX="2" RadiusY="2"/>
+                <TextBlock Text="MOTOR CONTROL"
+                           FontFamily="Arial Black" FontSize="11" FontWeight="Black"
+                           Foreground="{StaticResource AccentBrush}" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="14"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="14"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                    <TextBlock Text="▸ MOTOR START" Style="{StaticResource FieldLabel}"/>
+                    <Button Content="▶  START" Style="{StaticResource StartButton}" Click="StartButton_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.3"/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                    <TextBlock Text="▸ DIRECTION" Style="{StaticResource FieldLabel}"/>
+                    <ComboBox Style="{StaticResource DirectionComboBox}">
+                        <ComboBoxItem Content="↻  CLOCKWISE"/>
+                        <ComboBoxItem Content="↺  ANTI-CW"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Column="4" HorizontalAlignment="Center">
+                    <TextBlock Text="▸ MOTOR STOP" Style="{StaticResource FieldLabel}"/>
+                    <Button Content="■  STOP" Style="{StaticResource StopButton}"  Click="StopButton_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#5A6A8A" BlurRadius="14" ShadowDepth="0" Opacity="0.3"/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
+
+</UserControl>
