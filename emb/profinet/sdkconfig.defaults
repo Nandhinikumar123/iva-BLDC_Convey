@@ -1,0 +1,50 @@
+# Flash size — the physical chip is 4MB; sdkconfig had 2MB which caused the
+# "detected size(4096k) larger than binary image header(2048k)" warning and
+# left no room for a SPIFFS partition.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+
+# Use the custom partition table that includes a SPIFFS partition
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+
+# SPIFFS
+CONFIG_SPIFFS_MAX_PARTITIONS=3
+CONFIG_SPIFFS_CACHE=y
+CONFIG_SPIFFS_CACHE_WR=y
+
+# Main task stack — p-net init + C++ STL + SPIFFS mount needs headroom
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=16384
+
+# pthread default stack — std::thread uses this for the PROFINET loop and timer threads.
+# The loop() function has deep call chains through p-net + logging, needs at least 12KB.
+CONFIG_PTHREAD_TASK_STACK_SIZE_DEFAULT=16384
+
+# Stack overflow detection — canary method catches overflows before they corrupt memory
+CONFIG_FREERTOS_USE_TRACE_FACILITY=y
+CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY=y
+
+# Enable verbose logging for PROFINET debugging
+CONFIG_LOG_DEFAULT_LEVEL_DEBUG=y
+CONFIG_LOG_MAXIMUM_LEVEL_DEBUG=y
+
+# Increase FreeRTOS tick rate from default 100Hz to 1000Hz.
+# This gives 1ms tick resolution so PROFINET cycle times < 10ms work correctly.
+# Without this, vTaskDelay(1) = 10ms at 100Hz, making 2ms cycles impossible.
+CONFIG_FREERTOS_HZ=1000
+
+# lwIP — allow raw sockets needed for PROFINET Ethernet frames
+CONFIG_LWIP_SO_RCVBUF=y
+CONFIG_LWIP_IP_FORWARD=n
+
+# Hostname used by pnal_get_hostname()
+CONFIG_LWIP_LOCAL_HOSTNAME="conveylinxplc-1-20"
+
+# Interrupt watchdog — increase timeout so p-net stack init does not trigger it
+# Default is 300ms which is too tight when SPIFFS formats on first boot
+CONFIG_ESP_INT_WDT_TIMEOUT_MS=800
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=30
+
+# Allow task WDT to not panic — gives more recovery time during init
+CONFIG_ESP_TASK_WDT_PANIC=n
