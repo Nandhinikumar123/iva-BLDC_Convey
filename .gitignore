@@ -1,5 +1,30 @@
-build/ 
-.metadata/ 
-.settings/ 
-bin/ 
-*.log 
+# Build folders
+build/
+*/build/
+out/
+cmake-build-*/
+
+# Eclipse / IDE files
+.metadata/
+.settings/
+.project
+.cproject
+
+# VS Code
+.vscode/
+
+# Compiled binaries
+bin/
+*.o
+*.obj
+*.elf
+*.map
+*.hex
+*.bin
+
+# Logs
+*.log
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
